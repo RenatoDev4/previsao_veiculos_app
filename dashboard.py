@@ -26,7 +26,7 @@ motor_unico = dataframe['motor'].unique()
 
 
 # Set page layout as wide
-st.set_page_config(layout="wide")
+st.set_page_config(page_title='Projeto DataScience - Veículos', layout="wide")
 
 # Add selectbox
 opcoes = ["Problema a ser resolvido", "Estatisticas do dataframe", "Estudo dos dados",
