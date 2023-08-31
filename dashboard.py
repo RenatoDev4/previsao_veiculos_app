@@ -8,7 +8,7 @@ import streamlit.components.v1 as components
 from category_encoders import TargetEncoder
 from sklearn.preprocessing import FunctionTransformer
 
-dados = pd.read_csv('precos_carros_tratados.csv', sep=';', na_values=['N/D'])
+dados = pd.read_csv('https://raw.githubusercontent.com/RenatoDev4/previsao_veiculos/main/precos_carros_tratados.csv', sep=';', na_values=['N/D'])
 
 with open('modelo_rf_otimizado_target.pkl', 'rb') as model_file:
     model = pickle.load(model_file)
